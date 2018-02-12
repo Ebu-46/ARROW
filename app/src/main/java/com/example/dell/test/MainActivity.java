@@ -98,45 +98,6 @@ public class MainActivity extends AppCompatActivity {
             arrowUp.setY(arrowUpY);
         }
 
-    public void playAgain(View view){
-
-        winnerLayout.setVisibility(View.INVISIBLE);
-
-        gmOver=false;
-        total=0;
-        score=0;
-
-        watermelonX=-80.0f;
-        watermelonY=10.0f;
-
-        boomX=-80.0f;
-        boomY=10.0f;
-
-        watermelon.setX(-80.0f);
-        watermelon.setY(10.0f);
-
-        boom.setX(-80.0f);
-        boom.setY(10.0f);
-
-        arrowUp=(ImageView) findViewById(R.id.arrowUp);
-        arrowUp.setVisibility(View.VISIBLE);
-
-        watermelon=(ImageView) findViewById(R.id.watermelon);
-        watermelon.setVisibility(View.VISIBLE);
-
-        boom=(ImageView) findViewById(R.id.boom);
-        boom.setVisibility(View.INVISIBLE);
-
-        //mainLayout.setVisibility(View.VISIBLE);
-        TextView scr = (TextView) findViewById(R.id.textView);
-        scr.setText("Score : 0");
-        scr.setVisibility(View.VISIBLE);
-
-        TextView mis = (TextView) findViewById(R.id.textView2);
-        mis.setText("Missed : 0");
-        mis.setVisibility(View.VISIBLE);
-
-    }
 
    public void gameOver(){
        gmOver=true;
