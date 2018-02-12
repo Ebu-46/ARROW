@@ -99,29 +99,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-   public void gameOver(){
-       gmOver=true;
-        TextView winnerMsg = (TextView) findViewById(R.id.score);
-        winnerMsg.setText("Score  " + String.valueOf(score));
-
-        winnerLayout.setVisibility(View. VISIBLE);
-
-        arrowUp=(ImageView) findViewById(R.id.arrowUp);
-        arrowUp.setVisibility(View.INVISIBLE);
-
-       watermelon=(ImageView) findViewById(R.id.watermelon);
-       watermelon.setVisibility(View.INVISIBLE);
-
-       boom=(ImageView) findViewById(R.id.boom);
-       boom.setVisibility(View.INVISIBLE);
-
-       TextView scr = (TextView) findViewById(R.id.textView);
-       scr.setVisibility(View.INVISIBLE);
-
-       TextView mis = (TextView) findViewById(R.id.textView2);
-       mis.setVisibility(View.INVISIBLE);
-    }
-
+   
 
 
     @Override
